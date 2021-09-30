@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#E91E63"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Hello World!"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TableLayout
         android:id="@+id/tableLay"
@@ -22,8 +23,8 @@
         android:layout_height="354dp"
         android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
 
         <TableRow>
             android:layout_width="match_parent"
@@ -33,7 +34,7 @@
                 android:id="@+id/version"
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
-                android:text="Version"
+                android:hint="Version"
                 tools:ignore="TouchTargetSizeCheck" />
         </TableRow>
 
@@ -45,7 +46,7 @@
                 android:id="@+id/codeName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Code"
+                android:hint="Code"
                 tools:ignore="TouchTargetSizeCheck" />
         </TableRow>
 
@@ -57,9 +58,9 @@
                 android:id="@+id/add"
 
                 android:layout_height="wrap_content"
+                android:onClick="click"
                 android:text="ADD"
-                tools:ignore="TouchTargetSizeCheck"
-                android:onClick="click"/>
+                tools:ignore="TouchTargetSizeCheck" />
         </TableRow>
 
 
@@ -68,6 +69,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:background="#E91E63"
+                android:backgroundTint="#E91E63"
                 android:text="Version"
                 android:textAlignment="center" />
 
@@ -75,32 +78,40 @@
                 android:layout_width="wrap_content"
 
                 android:layout_height="42dp"
+                android:background="#E91E63"
                 android:text="Code Name"
                 android:textAlignment="center" />
-    </TableRow>
+        </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_height="match_parent"
+                android:background="#E91E63"
+                android:backgroundTint="#E91E63"
                 android:text="Android 9.0"
                 android:textAlignment="center" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="42dp"
+                android:background="#E91E63"
                 android:text="Pie"
                 android:textAlignment="center" />
         </TableRow>
+
         <TableRow>
 
             <TextView
                 android:layout_height="match_parent"
+                android:background="#E91E63"
                 android:text="Android 8.0"
                 android:textAlignment="center" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="42dp"
+                android:background="#E91E63"
                 android:text="Oreo"
                 android:textAlignment="center" />
         </TableRow>

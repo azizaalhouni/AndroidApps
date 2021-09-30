@@ -25,18 +25,20 @@ class MainActivity : AppCompatActivity() {
 //        val m = findViewById<EditText>(R.id.codeName)
         var columnOne = TextView(this)
         var ColumnTwo = TextView(this)
+
+        (android.view.Gravity.CENTER)
         val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
         tableRow.setLayoutParams(layoutParams)
 
         tableRow.addView(columnOne,0)
         tableRow.addView(ColumnTwo,1)
+
+//       tableRow.background = R.drawable.ic_launcher_background
+
         //To add the created Row into Layout
         tableLay.addView(tableRow)
-        ColumnTwo.text = version.text.toString()
+        columnOne.text = version.text.toString()
         ColumnTwo.text = codeName.text.toString()
-
-
-
 
 
     }
