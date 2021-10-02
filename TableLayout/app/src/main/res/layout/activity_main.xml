@@ -7,68 +7,71 @@
     android:backgroundTint="#E91E63"
     tools:context=".MainActivity">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Hello World!"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    <EditText
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Version"
+        app:layout_constraintBottom_toTopOf="@+id/codeName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/codeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="476dp"
+        android:hint="Code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/version"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/add"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="402dp"
+        android:onClick="click"
+        android:text="ADD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeName"
+        app:layout_constraintVertical_bias="0.886"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TableLayout
         android:id="@+id/tableLay"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="354dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        android:background="">
-
-        <TableRow>
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            <EditText
-                android:id="@+id/version"
-                android:layout_width="336dp"
-                android:layout_height="wrap_content"
-                android:hint="Version"
-                tools:ignore="TouchTargetSizeCheck" />
-        </TableRow>
-
-        <TableRow>
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            <EditText
-                android:id="@+id/codeName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Code"
-                tools:ignore="TouchTargetSizeCheck" />
-        </TableRow>
-
-        <TableRow>
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            <Button
-                android:id="@+id/add"
-
-                android:layout_height="wrap_content"
-                android:onClick="click"
-                android:text="ADD"
-                tools:ignore="TouchTargetSizeCheck" />
-        </TableRow>
+        >
 
 
         <TableRow>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="198dp"
                 android:layout_height="match_parent"
                 android:background="#E91E63"
                 android:backgroundTint="#E91E63"
@@ -76,8 +79,7 @@
                 android:textAlignment="center" />
 
             <TextView
-                android:layout_width="wrap_content"
-
+                android:layout_width="202dp"
                 android:layout_height="42dp"
                 android:background="#E91E63"
                 android:text="Code Name"
