@@ -3,6 +3,7 @@ package com.example.recyclerlistview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.card_layout.*
 
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class DetailActivity : AppCompatActivity() {
             var ig:Int = intent.getIntExtra("image",0)
             name.text = t1.toString()
             desc.text = t2.toString()
-//            imageView2.setImageResource(ig)
+            imageView2.setImageResource(ig)
         }
     }
 }
